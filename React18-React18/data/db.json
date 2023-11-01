@@ -1,0 +1,111 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Nguyen Huynh Tien",
+      "area": "DA NANG",
+      "creditlimit": 10000
+    },
+    {
+      "id": 2,
+      "name": "Mr Quang",
+      "area": "DA NANG",
+      "creditlimit": 10000
+    }
+  ],
+  "user": [
+    {
+      "id": "tien",
+      "name": "tien",
+      
+      "email": "tien@gmail.com",
+      "mobile": "1`234567890-",
+      "password": "tien",
+      "role":"admin",
+      "address": "fpt",
+      "isactive": true
+    },
+    {
+      "id": "htieenxihh",
+      "name": "htieenxihh",
+      
+      "email": "htieenxihh@gmail.com",
+      "mobile": "12345678",
+      "password": "htieenxihh",
+      "address": "FPT",
+      "role": "supervisor",
+      "isactive": true
+    },
+    {
+      "id": "TeacherQuang",
+      "name": "TeacherQuang",
+      "email": "TeacherQuang@gmail.com",
+      "password": "TeacherQuang",
+      "mobile": "",
+      "address": "",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "user",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "user",
+      "mobile": "123456789",
+      "address": "dn",
+      "role": "supervisor",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "manager",
+      "name": "Manager"
+    },
+    {
+      "code": "supervisor",
+      "name": "supervisor"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true
+    },
+    {
+      "role": "manager",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": false
+    },
+    {
+      "role": "supervisor",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveadd": false,
+      "haveedit": false,
+      "havedelete": false
+    }
+  ]
+}
